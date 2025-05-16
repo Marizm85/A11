@@ -125,7 +125,7 @@ header h2, header h3 {
 
 main {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   padding: 0 30px;
   gap: 20px;
 }
@@ -249,6 +249,7 @@ img {
   #menu {
     display: none;
   }
+
   .slicknav_menu {
     display: block !important;
   }
@@ -258,7 +259,11 @@ img {
     padding: 0 15px;
   }
 
-  .left-column,
+  .left-column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
   .right-column {
     width: 100%;
   }
