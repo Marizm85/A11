@@ -206,8 +206,6 @@ footer {
 .slicknav_menu {
   background-color: var(--main-color);
   font-family: Arial, sans-serif;
-  padding: 0;
-  margin: 0;
 }
 
 .slicknav_btn {
@@ -216,19 +214,12 @@ footer {
   padding: 10px 15px;
   border: none;
   font-size: 16px;
-  text-align: left;
-  cursor: pointer;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .slicknav_nav {
   background-color: var(--main-color);
-  padding: 0;
-  margin: 0;
-}
-
-.slicknav_nav li {
-  border-top: 1px solid #a0522d;
 }
 
 .slicknav_nav a {
@@ -240,21 +231,8 @@ footer {
   font-weight: bold;
 }
 
-.slicknav_nav a:hover,
-.slicknav_nav .slicknav_row:hover {
+.slicknav_nav a:hover {
   background-color: #b22222;
-  color: white;
-}
-
-.slicknav_nav ul {
-  padding-left: 15px;
-  background-color: var(--main-color);
-}
-
-.slicknav_arrow {
-  float: right;
-  margin-right: 10px;
-  color: white;
 }
 
 @media screen and (max-width: 768px) {
@@ -268,6 +246,6 @@ footer {
 
 @media screen and (min-width: 769px) {
   .slicknav_menu {
-    display: none;
+    display: none !important;
   }
 }
