@@ -11,7 +11,7 @@
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       $('#menu').slicknav({
-        prependTo: '.container',
+        prependTo: '#nav_container',
         label: '',
         closeOnClick: true,
         allowParentLinks: true
@@ -21,46 +21,47 @@
 </head>
 <body>
   <div class="container">
-
-    <nav>
-      <ul id="menu">
-        <li><a href="index.html">Home</a></li>
-        <li>
-          <a href="#">About Us</a>
-          <ul>
-            <li><a href="#">Our Mission</a></li>
-            <li><a href="#">Board Members</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Speakers</a></li>
-        <li><a href="#">Tickets</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-
     <header>
-      <img src="images/tlogo.png" alt="Town Hall Logo" class="responsive-img" />
+      <img src="images/tlogo.png" alt="Town Hall Logo" />
       <hgroup>
         <h2>San Joaquin Valley Town Hall</h2>
         <h3>Celebrating our <em class="shadow">75</em><sup>th</sup> Year</h3>
       </hgroup>
     </header>
 
+    <div id="nav_container"></div>
+
+    <ul id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="speakers.html">Speakers</a></li>
+      <li><a href="luncheons.html">Luncheons</a></li>
+      <li><a href="tickets.html">Tickets</a></li>
+      <li>
+        <a href="#">About Us</a>
+        <ul>
+          <li><a href="history.html">Our History</a></li>
+          <li><a href="board.html">Board of Directors</a></li>
+          <li><a href="past.html">Past Speakers</a></li>
+          <li><a href="contact.html">Contact Information</a></li>
+        </ul>
+      </li>
+    </ul>
+
     <main>
       <div class="left-column">
         <h2>Guest speakers</h2>
 
         <h3>October<br /><a href="speakers/brancaccio.html">David Brancaccio</a></h3>
-        <img src="images/brancaccio (1).png" alt="David Brancaccio photo" class="responsive-img" />
+        <img src="images/brancaccio (1).png" alt="David Brancaccio photo" />
 
         <h3>November<br /><a href="speakers/sorkin.html">Andrew Ross Sorkin</a></h3>
-        <img src="images/sorkin75.jpg" alt="Andrew Ross Sorkin photo" class="responsive-img" />
+        <img src="images/sorkin75.jpg" alt="Andrew Ross Sorkin photo" />
 
         <h3>January<br /><a href="speakers/chua.html">Amy Chua</a></h3>
-        <img src="images/chua75.jpg" alt="Amy Chua photo" class="responsive-img" />
+        <img src="images/chua75.jpg" alt="Amy Chua photo" />
 
         <h3>February<br /><a href="speakers/sampson.html">Scott Sampson</a></h3>
-        <img src="images/sampson.jpg" alt="Scott Sampson photo" class="responsive-img" />
+        <img src="images/sampson.jpg" alt="Scott Sampson photo" />
       </div>
 
       <div class="right-column">
@@ -78,16 +79,16 @@
 
         <h2 class="speaker-heading">Speaker of the Month</h2>
         <h3>Fossil Threads in the Web of Life</h3>
-        <p><strong>February<br />Scott Sampson</strong></p>
-        <img src="images/samdino.jpg" alt="Scott Sampson presenting with dinosaur" class="responsive-img" />
+        <p><strong>February<br>Scott Sampson</strong></p>
+        <img src="images/samdino.jpg" alt="Scott Sampson presenting with dinosaur" style="float: right; margin-left: 15px; width: 150px;" />
         <p>
           What's 75 million years old and brand spanking new? A teenage
           Utahceratops! Come to the Saroyan armed with your best dinosaur
           roar, when Scott Sampson, Research Curator at the Utah Museum of
-          Natural History, steps to the podium.
+          Natural History, steps to the podium...
         </p>
         <p>
-          <a href="speakers/sampson.html" class="readmore-link">Read more.</a> Or meet us there!
+          <a href="speakers/sampson.html" class="readmore-link">Read more.</a> Or play video
         </p>
 
         <h2>Our Ticket Packages</h2>
