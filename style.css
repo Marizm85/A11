@@ -10,12 +10,17 @@ html {
 }
 
 body {
-  width: 720px;
-  margin: 0 auto;
-  border: 3px solid var(--border-color);
+  margin: 0;
   background-color: white;
   font-family: Arial, Helvetica, sans-serif;
   padding: 0;
+}
+
+.container {
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+  border: 3px solid var(--border-color);
 }
 
 header {
@@ -203,6 +208,11 @@ footer {
   text-align: center;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .slicknav_menu {
   background-color: var(--main-color);
   font-family: Arial, sans-serif;
@@ -241,6 +251,16 @@ footer {
   }
   .slicknav_menu {
     display: block !important;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
   }
 }
 
