@@ -95,7 +95,6 @@ ul {
   padding-left: 1.5em;
 }
 
-/* Custom underline styles */
 .speaker-heading {
   border-bottom: 2px solid var(--border-color);
   padding-bottom: 0.2em;
@@ -138,4 +137,30 @@ footer {
   padding: 0.5em 30px;
   font-size: 90%;
   text-align: center;
+}
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.slicknav_menu {
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    width: 95%;
+    border: none;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
 }
