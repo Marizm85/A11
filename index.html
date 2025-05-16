@@ -4,12 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>San Joaquin Valley Town Hall</title>
+
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menu/slicknav.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="menu/slicknav.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        $('#menu').slicknav({
+          prependTo: '.container',
+          label: '',
+          closeOnClick: true,
+          allowParentLinks: true
+        });
+      });
+    </script>
   </head>
   <body>
     <div class="container">
+
+      <nav>
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="#">About Us</a>
+            <ul>
+              <li><a href="#">Our Mission</a></li>
+              <li><a href="#">Board Members</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Speakers</a></li>
+          <li><a href="#">Tickets</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
       <header>
-        <img src="images/tlogo.png" alt="Town Hall Logo" />
+        <img src="images/tlogo.png" alt="Town Hall Logo" class="responsive-img" />
         <hgroup>
           <h2>San Joaquin Valley Town Hall</h2>
           <h3>Celebrating our <em class="shadow">75</em><sup>th</sup> Year</h3>
@@ -20,29 +52,17 @@
         <div class="left-column">
           <h2>Guest speakers</h2>
 
-          <h3>
-            October<br />
-            <a href="speakers/brancaccio.html">David Brancaccio</a>
-          </h3>
-          <img src="images/brancaccio (1).png" alt="David Brancaccio photo" />
+          <h3>October<br /><a href="speakers/brancaccio.html">David Brancaccio</a></h3>
+          <img src="images/brancaccio (1).png" alt="David Brancaccio photo" class="responsive-img" />
 
-          <h3>
-            November<br />
-            <a href="speakers/sorkin.html">Andrew Ross Sorkin</a>
-          </h3>
-          <img src="images/sorkin75.jpg" alt="Andrew Ross Sorkin photo" />
+          <h3>November<br /><a href="speakers/sorkin.html">Andrew Ross Sorkin</a></h3>
+          <img src="images/sorkin75.jpg" alt="Andrew Ross Sorkin photo" class="responsive-img" />
 
-          <h3>
-            January<br />
-            <a href="speakers/chua.html">Amy Chua</a>
-          </h3>
-          <img src="images/chua75.jpg" alt="Amy Chua photo" />
+          <h3>January<br /><a href="speakers/chua.html">Amy Chua</a></h3>
+          <img src="images/chua75.jpg" alt="Amy Chua photo" class="responsive-img" />
 
-          <h3>
-            February<br />
-            <a href="speakers/sampson.html">Scott Sampson</a>
-          </h3>
-          <img src="images/sampson.jpg" alt="Scott Sampson photo" />
+          <h3>February<br /><a href="speakers/sampson.html">Scott Sampson</a></h3>
+          <img src="images/sampson.jpg" alt="Scott Sampson photo" class="responsive-img" />
         </div>
 
         <div class="right-column">
@@ -51,7 +71,7 @@
             San Joaquin Valley Town Hall is a non-profit organization that is run by
             an all-volunteer board of directors. Our mission is to bring nationally
             and internationally renowned, thought-provoking speakers who inform,
-            educate, and entertain our audience! As one of our members told us:
+            educate, and entertain our audience!
           </p>
           <blockquote>
             “Each year I give a ticket package to each of our family members.
@@ -60,15 +80,13 @@
 
           <h2 class="speaker-heading">Speaker of the Month</h2>
           <h3>Fossil Threads in the Web of Life</h3>
-          <p><strong>February<br>Scott Sampson</strong></p>
-          <img src="images/samdino.jpg" alt="Scott Sampson presenting with dinosaur" style="float: right; margin-left: 15px; width: 150px;" />
+          <p><strong>February<br />Scott Sampson</strong></p>
+          <img src="images/samdino.jpg" alt="Scott Sampson presenting with dinosaur" class="responsive-img" />
           <p>
-             What's 75 million years old and brand spanking new? A teenage
-              Utahceratops! Come to the Saroyan armed with your best dinosaur
-              roar, when Scott Sampson, Research Curator at the Utah Museum of
-              Natural History, steps to the podium. Sampson's research has focused
-              on the ecology and evolution of late Cretaceous dinosaurs and he has
-              conducted fieldwork in a number of countries in Africa.
+            What's 75 million years old and brand spanking new? A teenage
+            Utahceratops! Come to the Saroyan armed with your best dinosaur
+            roar, when Scott Sampson, Research Curator at the Utah Museum of
+            Natural History, steps to the podium.
           </p>
           <p>
             <a href="speakers/sampson.html" class="readmore-link">Read more.</a> Or meet us there!
